@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/switch.css">
+</head>
+<body>
+<div class="switch-container">
+    <input id="switch" type="checkbox" class="switch" />
+    <label for="switch" onclick="test()"></label>
+</div>
+
+<script>
+    var test = function(){
+        console.log(!document.getElementById('switch').checked ? "选中" : "未选中");
+    }
+</script>
+</body>
+</html>

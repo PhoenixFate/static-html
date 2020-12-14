@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乳源人防宝</title>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+<div class="container">
+    <div class="index-content">
+        <div class="top">
+            <img src="https://picture.bytes-space.com/ruyao/index/avatar.jpg">
+            <div class="user-properties">
+                <b>Docaman</b><br>
+                <b>来自火星</b>
+            </div>
+        </div>
+        <div class="banner">
+            <button class="introduction"><b>游戏说明及思想</b></button>
+        </div>
+        <div class="main">
+            <div class="row1">
+                <div class="game-box1">
+                    <button class="personal"><b>个人赛</b></button>
+                </div>
+                <div class="game-box1">
+                    <button class="award"><b>奖品介绍</b></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="game-box1">
+                    <button class="challenge"><b>挑战赛</b></button>
+                </div>
+                <div class="game-box1">
+                    <button class="rank"><b>排行榜</b></button>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="game-box1">
+                    <button class="multiple"><b>多人赛</b></button>
+                </div>
+                <div class="game-box1">
+                    <button class="history"><b>历史记录</b></button>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="column1">
+                    <div class="game-box1">
+                        <button class="team"><b>团队赛</b></button>
+                    </div>
+                    <div class="game-box1">
+                        <button class="arena"><b>擂台赛</b></button>
+                    </div>
+                </div>
+                <div class="column2"><button class="settings"><b>设置</b></button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/jquery-1.12.1.js"></script>
+<script>
+    // 介绍页面
+    $(".introduction").click(function(){
+        $(window).attr('location',"./introduction.html");
+    });
+    // 个人赛
+    $(".personal").click(function(){
+        $(window).attr('location',"./selectRole.html");
+    });
+    // 奖品
+    $(".award").click(function(){
+        $(window).attr('location',"./award.html");
+    });
+    // 挑战赛
+    $(".challenge").click(function(){
+        $(window).attr('location',"./challenge.html");
+    });
+    // 排行榜
+    $(".rank").click(function(){
+        $(window).attr('location',"./rank.html");
+    });
+    // 多人赛
+    $(".multiple").click(function(){
+        $(window).attr('location',"./multiple.html");
+    });
+    // 历史赛事
+    $(".history").click(function(){
+        $(window).attr('location',"./history.html");
+    });
+    // 团队赛
+    $(".team").click(function(){
+        $(window).attr('location',"./team.html");
+    });
+    // 擂台赛
+    $(".arena").click(function(){
+        $(window).attr('location',"./arena.html");
+    });
+    // 设置
+    $(".settings").click(function(){
+        $(window).attr('location',"./settings.html");
+    });
+
+
+</script>
+</body>
+</html>

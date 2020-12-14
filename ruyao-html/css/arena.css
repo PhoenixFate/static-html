@@ -1,0 +1,123 @@
+
+.arena {
+    height: 1200rem;
+    width: 650rem;
+    background: #5b96fe;
+    margin: 120rem auto;
+    border-radius: 30rem;
+    overflow: hidden;
+}
+
+.arena .title {
+    width: 650rem;
+    height: 180rem;
+    background: url("https://picture.bytes-space.com/ruyao/arena/titleBackground.png") no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    border-bottom: 8rem solid #fff;
+    text-align: center;
+}
+
+.title img {
+    width: 400rem;
+    height: 140rem;
+    margin-top: 20rem;
+}
+
+.match {
+    height: 782rem;
+    width: 650rem;
+    overflow: scroll;
+}
+
+.match .one-match {
+    width: 560rem;
+    height: 160rem;
+    background: #5987f6;
+    border: 6rem solid #7fbfff;
+    border-radius: 12rem;
+    color: #fff;
+    font-size: 38rem;
+    margin: 40rem auto;
+    position: relative;
+    text-align: center;
+    line-height: 160rem;
+}
+
+.one-match .tag {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160rem;
+    height: 160rem;
+}
+
+.match .one-match img {
+    width: 160rem;
+    height: 160rem;
+}
+
+.one-match .tag div {
+    position: absolute;
+    transform: rotate(45deg);
+    top: -18rem;
+    left: 33rem;
+    width: 150rem;
+    font-size: 32rem;
+}
+
+.circle {
+    height: 32rem;
+    width: 100%;
+    position: relative;
+}
+
+.circle .left,
+.circle .right {
+    width: 32rem;
+    height: 32rem;
+    border-radius: 50%;
+
+    position: absolute;
+    background: #98ccfe;
+}
+
+.circle .left {
+    left: -16rem;
+}
+
+.circle .right {
+    right: -16rem;
+}
+
+.circle .line {
+    height: 2rem;
+    border-top: 2rem #98ccfe dashed;
+    width: 610rem;
+    position: absolute;
+    left: 20rem;
+    top:15rem;
+}
+
+.bottom {
+    height: 200rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom .bottom-btn{
+    width: 228rem;
+    height: 80rem;
+    box-sizing: border-box;
+    border: 4rem solid #7fbfff;
+    background-color: #5987f6;
+    color:#fff;
+    border-radius: 12rem;
+    margin-top: -28rem;
+    font-size: 32rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 74rem;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settings</title>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/settings.css">
+    <link rel="stylesheet" href="../css/switch.css">
+</head>
+<body>
+    <div class="container">
+        <div class="settings">
+            <div class="out">
+                <img src="https://picture.bytes-space.com/ruyao/settings/settingIcon.png" alt=""/>
+            </div>
+            <div class="head">
+                <div class="close">x</div>
+            </div>
+            <div class="set">
+                <span>设</span><span>置</span>
+            </div>
+            <div class="set-button">
+                <div class="music">
+                    <img src="https://picture.bytes-space.com/ruyao/settings/music.jpg" alt=""/>
+                    <span>音效</span>
+                    <div class="switch-container">
+                        <input id="switch1" type="checkbox" class="switch" />
+                        <label for="switch1" onclick="swtichClick1()"></label>
+                    </div>
+                </div>
+                <div class="push">
+                    <img src="https://picture.bytes-space.com/ruyao/settings/post.png" alt=""/>
+                    <span>推送</span>
+
+                    <div class="switch-container">
+                        <input id="switch2" type="checkbox" class="switch" />
+                        <label for="switch2" onclick="swtichClick2()"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="feedback">
+                <div class="feedback-content">
+                    反馈
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var swtichClick1 = function(){
+            console.log(document.getElementById('switch1').checked)
+            console.log(!document.getElementById('switch1').checked ? "选中" : "未选中");
+        }
+        var swtichClick2 = function(){
+            console.log(!document.getElementById('switch2').checked ? "选中" : "未选中");
+        }
+    </script>
+</body>
+</html>

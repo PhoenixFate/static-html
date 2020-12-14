@@ -1,0 +1,140 @@
+button {
+    font-size: 40rem;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.index {
+    position:absolute;
+    left:30rem;
+    top:100rem;
+    height: 140rem;
+    width: 140rem;
+    border-radius: 50%;
+    border: 4rem solid #FFF;
+    background:#ef9c00;
+    box-shadow:0 5rem 4rem #444;
+}
+
+.index:active {
+    background-color: #ef7e14;
+}
+
+.main {
+    min-height: 1000rem;
+    margin:30% auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.main div {
+    margin-bottom: 40rem;
+    font-size: 34rem;
+    font-weight: bold;
+}
+
+.result1,
+.result2,
+.result3,
+.result5{
+    border:8rem solid #3fbcef;
+}
+
+.result1 {
+    border:8rem solid #7ad1fd;
+    line-height:100rem;
+    border-radius:30rem;
+    width:50%;
+    text-align:center;
+    height:100rem;
+    color:#222;
+    background:#fff;
+}
+
+.result2 {
+    background:#6cf;
+    color:#fff;
+    border-radius:50rem;
+    line-height:75rem;
+    width:50%;
+    text-align:center;
+    height:75rem;
+}
+
+.result3 {
+    background:#fff;
+    border-radius:50rem;
+    line-height:75rem;
+    width:50%;
+    text-align:center;
+    height:75rem;
+}
+
+.result5{
+    width: 60%;
+    min-height: 600rem;
+    background:#fff;
+    border-radius:30rem;
+    color:#222;
+    line-height: 40rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.result5 p {
+    width: 400rem;
+    margin: 20rem auto;
+    text-align: center;
+}
+
+.result5 img{
+    width: 400rem;
+    height: 400rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20rem;
+}
+
+.bottom {
+    width: 100%;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    height: 100rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bottom button {
+    height: 100rem;
+    width: 200rem;
+    border-radius: 30rem;
+    box-shadow:0 3rem 3rem #444;
+    border: 3rem solid #FFF;
+}
+
+.btn1 {
+    background:#c8e19d;
+}
+
+.btn2 {
+    background:#0cf;
+}
+
+.btn3 {
+    background:#fc3;
+}
+
+.btn1:active {
+    background-color: #83E162;
+}
+
+.btn2:active {
+    background-color: #2896FF;
+}
+
+.btn3:active {
+    background-color: #FFAE25;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+    <div class="container">
+        <button class="index">首页</button>
+        <div class="main">
+            <div class="result1">您已挑战完成</div>
+            <div class="result2">共用:0小时1分钟25秒</div>
+            <div class="result3">击败65%的对手</div>
+            <div class="result4">达到了个人赛的标准</div>
+            <div class="result5">
+                <p> 乳瑶纪念品 </p>
+                <p> 纯金奖杯，纪念佳品 </p>
+                <img src="https://picture.bytes-space.com/ruyao/result/award.png" alt=""/>
+            </div>
+        </div>
+        <div class="bottom">
+            <button class="btn1">挑战回顾</button>
+            <button class="btn2">荣誉分享</button>
+            <button class="btn3">查看排名</button>
+        </div>
+    </div>
+    <script src="../js/jquery-1.12.1.js"></script>
+    <script>
+        $(".index").click(function(){
+            $(window).attr('location',"./index.html");
+        });
+    </script>
+</body>
+</html>

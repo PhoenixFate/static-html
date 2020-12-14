@@ -1,0 +1,65 @@
+<body>
+<div class="big-big-content">
+    <div class="big-content">
+        <div class="content">
+            <div class="info">
+                zxczxczxcZXcZXczxczxczxcZXcZXczxczxczxcZXcZXczxczxcz
+                xcZXcZXczxczxczxcZXcZXczxczxczxcZXcZXczxczxczxcZXcZXczxcz
+                xczxcZXcZXczxczxczxcZXcZXczxczxczxcZXcZXczxczxczxcZXcZXc
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<style>
+    body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .big-big-content {
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+    .big-content {
+        background: url("../images/detail-header-background-02.png") center center / cover no-repeat fixed;
+        /*background-image: url("../images/detail-header-background-02.png");*/
+        /*background-size: 100% 100%;*/
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .content {
+        height: 400px;
+        width: 100%;
+        word-break: break-all;
+        z-index: 10;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        overflow: hidden; // 为防止效果不超出 content 的范围
+    }
+    .content:before {
+        content: '';
+        background: url("../images/detail-header-background-02.png") center center / cover no-repeat fixed;
+        background-size: 100% 100%;
+        filter: blur(6px);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        margin: -30px; //为解决元素的边缘模糊的效果减弱
+    }
+    .info {
+        padding: 40px;
+        color: #fff;
+    }
+</style>
+

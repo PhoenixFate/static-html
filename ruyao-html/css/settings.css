@@ -1,0 +1,110 @@
+.settings {
+    width: 600rem;
+    height: 800rem;
+    margin:40% auto 0;
+    background-color: #fff;
+    position: relative;
+    border-radius: 30rem;
+}
+
+.out {
+    position: absolute;
+    width: 180rem;
+    height: 180rem;
+    border-radius: 50%;
+    background-color: #4682c0;
+    border:4rem solid #fff;
+    left:50%;
+    margin-left: -90rem;
+    top:-130rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.out img {
+    width: 140rem;
+    height: 140rem;
+}
+
+.head {
+    height: 140rem;
+}
+
+.head .close {
+    width: 70rem;
+    height: 70rem;
+    float: right;
+    font-size: 54rem;
+    text-align: right;
+    padding: 10rem 20rem;
+    color: #e76c1e;
+    line-height: 40rem;
+}
+
+.set {
+    height: 120rem;
+    background-color: #404b9d;
+    font-size: 52rem;
+    line-height: 120rem;
+    text-align: center;
+    color:#fff;
+    font-weight: bold;
+}
+
+.set span:nth-child(1){
+    margin-right: 40rem;
+}
+
+.set-button {
+    height: 400rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.set-button img {
+    width: 68rem;
+    height: 68rem;
+}
+
+.set-button .music,
+.set-button .push{
+    width: 400rem;
+    height: 100rem;
+    display: flex;
+    font-size: 38rem;
+    color: #404b9d;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.set-button span {
+    margin: 0 30rem;
+}
+
+.feedback {
+    height: 140rem;
+    background-color: #404b9d;
+    border-bottom-left-radius: 30rem;
+    border-bottom-right-radius: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-content {
+    height: 80rem;
+    width: 250rem;
+    background-color: #fff;
+    color:#404b9d;
+    font-size: 42rem;
+    line-height: 80rem;
+    text-align: center;
+    border-radius: 60rem;
+    font-weight: bold;
+}
+
+

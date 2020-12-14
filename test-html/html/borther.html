@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main-container {
+            position: relative;
+            min-height: 500px;
+        }
+
+        #left-div {
+            position: relative;
+            float: left;
+            width: 700px;
+            min-height: inherit;
+        }
+
+        #right-div {
+            position: relative;
+            float: right;
+            width: 248px;
+            min-height: inherit;
+            height: inherit;
+        }
+
+        .clearfix:after {
+            content: " ";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix {
+            display: inline-block;
+            _height: 1%;
+            clear: both;
+        }
+
+        .clearfix {
+            display: block;
+            clear: both;
+        }
+
+        .border {
+            border: solid 1px #000;
+        }
+        .test {
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+<div id="main-container" class="border clearfix">
+    <div id="left-div" class="border">
+        ...
+    </div>
+    <div id="right-div" class="border">
+        <div class="test">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

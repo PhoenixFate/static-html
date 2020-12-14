@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box li, .box2 li {
+            width: 100px;
+            height: 30px;
+            display: inline-block;
+            background: red;
+        }
+
+        .box li:nth-child(2n),
+        .box2 li:nth-child(2n) {
+            background: blue;
+        }
+
+        .box {
+            width: 300px;
+            white-space: nowrap;
+            overflow-x: auto;
+            border: 1px solid #999
+        }
+
+        .box2 {
+            width: 300px;
+            overflow-x: auto;
+            border: 1px solid #999
+        }
+
+        .box2 {
+            display: flex;
+        }
+
+        .box2 li {
+            flex-shrink: 0
+        }
+    </style>
+</head>
+<body>
+<ul class="box">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<ul class="box2">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+</html>

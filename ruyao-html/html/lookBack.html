@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LookBack</title>
+    <script src="../js/resize.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/lookBack.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="menu">
+        <div class="lookBack">
+            <img src="https://picture.bytes-space.com/ruyao/lookBack/lookBack.png" alt=""/>
+            <span>回顾</span>
+        </div>
+
+        <div class="type">
+            选项
+        </div>
+
+        <div class="back">
+            <span>返回</span>
+            <img src="https://picture.bytes-space.com/ruyao/lookBack/back.png" alt=""/>
+        </div>
+    </div>
+    <div class="node-title">
+        <span class="node">五彩瑶山</span>
+    </div>
+    <div class="main">
+        <div class="title">过山瑶文化主要指哪个民族?</div>
+        <div class="question">侗族</div>
+        <div class="question">傣族</div>
+        <div class="question">瑶族</div>
+        <div class="question">苗族</div>
+        <img src="https://picture.bytes-space.com/ruyao/question/QRCode.png" alt="" id="QRCode">
+    </div>
+    <div class="btn-left">
+
+    </div>
+    <div class="btn-right">
+
+    </div>
+    <div class="message">
+        答对了
+    </div>
+</div>
+
+<script src="../js/jquery-1.12.1.js"></script>
+<script>
+    let knowledgeList;
+    let node = 0;
+    let noteName = ['五彩瑶山', '微缩沙盘', '飞夺泸定桥', '泄露沾染', '防化洗消', '文化长廊', '生命复苏', '未来展望'];
+
+    $(function () {
+        let url = 'lookBack.json';
+        $.ajax(url, {
+            success: function (data) {
+                console.log(data);
+                console.log(data.knowledgeList)
+                if (data && data.knowledgeList) {
+                    knowledgeList = data.knowledgeList;
+                }
+                console.log("initial node: " + node);
+                changeQuestion(node);
+            }
+        });
+    });
+
+
+    $(".btn-left").on("click", function () {
+        console.log("btn-left click node: " + node)
+        if (node >= 1) {
+            changeQuestion(--node);
+        } else {
+            $(".message").text("已经是第一题了").show();
+            setTimeout(function () {
+                $(".message").hide();
+            }, 1200)
+        }
+    });
+
+    $(".btn-right").on("click", function () {
+        console.log("btn-right click node: " + node)
+
+        if (node < 7) {
+            changeQuestion(++node);
+        } else {
+            $(".message").text("已经是最后一题了").show();
+            setTimeout(function () {
+                $(".message").hide();
+            }, 1200)
+        }
+    });
+
+    function changeQuestion(myNode) {
+        $('.node').text(noteName[myNode]);
+        $(".question").remove();
+        let knowledge = knowledgeList[myNode];
+        if (knowledge.type === "0") {
+            $('.title').text(knowledge.title);
+            for (let i = 0; i < knowledge.optionList.length; i++) {
+                if (knowledge.bingo === (i + "")) {
+                    $(".main").append("<div class='question right' id=" + (i + 1) + ">" + knowledge.optionList[i] + "</div>");
+                } else {
+                    $(".main").append("<div class='question' id=" + (i + 1) + ">" + knowledge.optionList[i] + "</div>");
+                }
+            }
+            $('#QRCode').hide();
+        } else {
+            $('#QRCode').show();
+        }
+    }
+
+</script>
+</body>
+</html>

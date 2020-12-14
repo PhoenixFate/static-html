@@ -1,0 +1,103 @@
+
+body{
+    background: url("../images/index/indexBackground.png") no-repeat fixed;
+    background-size:100% 100%;
+}
+
+.content{
+    height: 1200px;
+}
+
+.loginBox {
+    background-color: #F0F4F6;
+    opacity:0.85;
+    /*上divcolor*/
+    border: 1px solid #BfD6E1;
+    border-radius: 20px;
+    color: #444;
+    font: 44px 'Microsoft YaHei', '微软雅黑';
+    margin: 50% auto;
+    width: 90%;
+}
+
+.loginBox .loginBoxCenter {
+    border-bottom: 1px solid #DDE0E8;
+    padding: 54px;
+}
+
+.loginBox .loginBoxCenter p {
+    margin-bottom: 60px
+}
+
+.loginBox .loginBoxButtons {
+    /*background-color: #F0F4F6;*/
+    /*下divcolor*/
+    border-top: 0px solid #FFF;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 28px;
+    overflow: hidden;
+    padding: 20px 24px;
+    vertical-align: center;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.loginBox .loginInput {
+    border: 1px solid #D2D9dC;
+    border-radius: 10px;
+    color: #444;
+    font: 44px 'Microsoft YaHei', '微软雅黑';
+    padding: 8px 14px;
+    margin-bottom: 8px;
+    width: 66%;
+}
+
+.loginBox .loginInput:FOCUS {
+    border: 1px solid #B7D4EA;
+    box-shadow: 0 0 8px #B7D4EA;
+}
+
+.loginBox .loginBtn {
+    background-image: -moz-linear-gradient(to bottom, blue, #85CFEE);
+    border: 1px solid #98CCE7;
+    border-radius: 20px;
+    box-shadow: inset rgba(255, 255, 255, 0.6) 0 1px 1px, rgba(0, 0, 0, 0.1) 0 1px 1px;
+    color: #444;
+    /*登录*/
+    cursor: pointer;
+    float: right;
+    font: bold 44px Arial;
+    padding: 20px 50px;
+}
+
+.loginBox .loginBtn:HOVER {
+    background-image: -moz-linear-gradient(to top, blue, #85CFEE);
+}
+
+.loginBox a.forgetLink {
+    color: #ABABAB;
+    cursor: pointer;
+    float: right;
+    font: 44px/50px Arial;
+    text-decoration: none;
+    vertical-align: middle;
+    /*忘记密码*/
+}
+
+.loginBox a.forgetLink:HOVER {
+    color: #000000;
+    text-decoration: none;
+    /*忘记密码*/
+}
+
+.loginBox input#remember {
+    vertical-align: middle;
+    height: 40px;
+    width: 40px;
+}
+
+.loginBox label[for="remember"] {
+    font: 44px Arial;
+}

@@ -1,0 +1,119 @@
+{
+    "code": 1,
+    "knowledgeList": [
+        {
+            "node": 1,
+            "role": 0,
+            "optionList": [
+                "女娲",
+                "炎帝",
+                "黄帝",
+                "盘古"
+            ],
+            "bingo": "4",
+            "linkImages": [],
+            "linkText": "",
+            "id": "6da8bf3ce71d4604845f9d3da678cffe",
+            "type": "0",
+            "title": "瑶族人民的盘王节是为了祭祀谁？"
+        },
+        {
+            "node": 2,
+            "role": 0,
+            "optionList": [],
+            "bingo": "A4号桩",
+            "linkImages": [],
+            "linkText": "",
+            "id": "22524f7f8d024c0eaf097a2a64cbbd77",
+            "type": "1",
+            "title": "韶关市乳源县的南水水库大坝在什么位置"
+        },
+        {
+            "node": 3,
+            "role": 0,
+            "optionList": [
+                "转入三级战备时",
+                "转入二级战备时",
+                "转入一级战备时"
+            ],
+            "bingo": "3",
+            "linkImages": [],
+            "linkText": "",
+            "id": "b1a07626f2874ccbb9d782960d5988bc",
+            "type": "0",
+            "title": "临战疏散的时机是（）"
+        },
+        {
+            "node": 4,
+            "role": 0,
+            "optionList": [
+                "破坏建筑",
+                "杀伤有生力量",
+                "破坏生存环境"
+            ],
+            "bingo": "2",
+            "linkImages": [],
+            "linkText": "",
+            "id": "1455c08ca87042e6981df94507b2d422",
+            "type": "0",
+            "title": "化学武器的使用，主要是为()。"
+        },
+        {
+            "node": 5,
+            "role": 0,
+            "optionList": [
+                "错误",
+                "正确"
+            ],
+            "bingo": "2",
+            "linkImages": [],
+            "linkText": "",
+            "id": "79babc2bc6ef42eb97520fda1a5de8cd",
+            "type": "0",
+            "title": "化学武器是以毒剂的毒害作用杀伤有生力量的各式武器。"
+        },
+        {
+            "node": 6,
+            "role": 0,
+            "optionList": [
+                "宪法",
+                "国防教育法",
+                "国防法"
+            ],
+            "bingo": "2",
+            "linkImages": [],
+            "linkText": "",
+            "id": "dda2c0e18db443a3bd4a3400f0418a76",
+            "type": "0",
+            "title": "全民国防教育大纲的制定依据是什么？"
+        },
+        {
+            "node": 7,
+            "role": 0,
+            "optionList": [
+                "错误",
+                "正确"
+            ],
+            "bingo": "2",
+            "linkImages": [],
+            "linkText": "",
+            "id": "2591eb26cb75498c98eac85918b8050d",
+            "type": "0",
+            "title": "发生地震时,人在被困环境下,应选择与外界连接最近的方向,用扔出小物件,挥动手帕、敲击周围墙体,用小棍扎上布条，发出求救信号,等待脱离险境"
+        },
+        {
+            "node": 8,
+            "role": 0,
+            "optionList": [
+                "错误",
+                "正确"
+            ],
+            "bingo": "1",
+            "linkImages": [],
+            "linkText": "",
+            "id": "747f86933a75417daabb0d0eeefef1c3",
+            "type": "0",
+            "title": "在和平时期，人民防空建设不需要长期准备，只需要在发生紧急情况前准备完毕即可。"
+        }
+    ]
+}

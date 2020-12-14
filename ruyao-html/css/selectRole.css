@@ -1,0 +1,187 @@
+
+.role-content {
+    width: 720rem;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 300rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+button {
+    border: none;
+    /*兼容小程序 start*/
+    color: #fff !important;
+    background-color: rgba(0, 0, 0, 0);
+    /*兼容小程序end*/
+}
+
+
+.row {
+    width: 720rem;
+    height: 223rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row div {
+    height: 220rem;
+    width: 240rem;
+    display: flex;
+}
+
+.row1 div {
+    align-items: flex-start;
+}
+.row2 div {
+    align-items: center;
+}
+.row3 div {
+    align-items: flex-end;
+}
+
+.column1 {
+    justify-content: flex-start;
+}
+
+.column2{
+    justify-content: center;
+}
+
+.column3 {
+    justify-content: flex-end;
+}
+
+.row button {
+    height: 200rem;
+    width: 220rem;
+    background-size: 100% 100%;
+}
+
+.row button:active {
+    height: 220rem;
+    width: 240rem;
+    background-size: 100% 100%;
+}
+
+.role-message {
+    height: 600rem;
+    width: 600rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 338rem;
+    left: 75rem;
+    border-radius: 28rem;
+    font-size: 38rem;
+    line-height: 130rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    visibility: hidden;
+}
+
+.role-message img {
+    height: 200rem;
+    width: 200rem;
+    margin-bottom: 20rem;
+}
+
+.role-message div {
+    height: 120rem;
+    width: 400rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.role-message div label {
+    width: 200rem;
+    height: 100%;
+    text-align: center;
+}
+
+.role-message div input {
+    height: 60rem;
+    width: 130rem;
+    font-size: 30rem;
+    line-height: 60rem;
+    color: #FFF;
+    background-color: transparent;
+    border-radius: 10rem;
+    text-align: center;
+}
+
+.btn1 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role1.png") no-repeat;
+}
+
+.btn1:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role1Hover.png") no-repeat;
+}
+
+.btn2 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role2.png") no-repeat;
+}
+
+.btn2:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role2Hover.png") no-repeat;
+}
+
+.btn3 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role3.png") no-repeat;
+}
+
+.btn3:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role3Hover.png") no-repeat;
+}
+
+.btn4 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role4.png") no-repeat;
+}
+
+.btn4:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role4Hover.png") no-repeat;
+}
+
+.btn5 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role5.png") no-repeat;
+}
+
+.btn5:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role5Hover.png") no-repeat;
+}
+
+.btn6 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role6.png") no-repeat;
+}
+
+.btn6:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role6Hover.png") no-repeat;
+}
+
+.btn7 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role7.png") no-repeat;
+}
+
+.btn7:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role7Hover.png") no-repeat;
+}
+
+.btn8 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role8.png") no-repeat;
+}
+
+.btn8:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role8Hover.png") no-repeat;
+}
+
+.btn9 {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role9.png") no-repeat;
+}
+
+.btn9:active {
+    background: transparent url("https://picture.bytes-space.com/ruyao/selectRole/role9Hover.png") no-repeat;
+}

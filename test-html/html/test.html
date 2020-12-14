@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CSS控制文字在一条线的中间</title>
+    <style type="text/css">
+        .sigma-content{
+            margin:50px;
+            text-align:center;
+            background-color:#fff;
+        }
+        .sigma-middle-line:before{
+            content:'';
+            display:block;
+            height:1px;
+            width:100%;
+            background-color:#999;/*颜色需与主题大背景色bai一致du*/
+            position:relative;
+            top:10px;/*调节线高*/
+            left:0;
+        }
+        .sigma-line-text{
+            display:inline-block;
+            background:#fff;
+            padding:18px 0 18px;
+            position:relative;
+            font-size:14px;
+            font-weight:500;
+        }
+    </style>
+</head>
+<body>
+<div class="sigma-content">
+<div class="sigma-middle-line">
+<span class="sigma-line-text">Sigma 的中横线bai</span>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <script src = "aes.min.js"></script>
+    <script>
+        //（需要先加载aes.min.js文件）
+        // 建议此文件需要混淆源代码
+
+
+        //3es123helo4bg5gp
+        //   /v1/yesfeng/yesList
+
+        //2b7e151628aed2a6
+        //   /v1/content/list
+
+        // AES 秘钥
+        var AesKey = "2b7e151628aed2a6";
+
+        // AES-128-CBC偏移量
+        var CBCIV = "2b7e151628aed2a6";
+
+        // 加密选项
+        var CBCOptions = {
+            iv: CryptoJS.enc.Utf8.parse(CBCIV),
+            mode:CryptoJS.mode.CBC,
+            padding: CryptoJS.pad.Pkcs7
+        }
+
+        /**
+         * AES加密（CBC模式，需要偏移量）
+         * @param data
+         * @returns {*}
+         */
+        function encrypt(data){
+            var key = CryptoJS.enc.Utf8.parse(AesKey);
+            var secretData = CryptoJS.enc.Utf8.parse(data);
+            var encrypted = CryptoJS.AES.encrypt(
+                secretData,
+                key,
+                CBCOptions
+            );
+            return encrypted.toString();
+        }
+
+        /**
+         * AES解密（CBC模式，需要偏移量）
+         * @param data
+         * @returns {*}
+         */
+        function decrypt(data){
+            var key = CryptoJS.enc.Utf8.parse(AesKey);
+            var decrypt = CryptoJS.AES.decrypt(
+                data,
+                key,
+                CBCOptions
+            );
+            return CryptoJS.enc.Utf8.stringify(decrypt).toString();
+        }
+
+
+        let url="/v1/yesfeng/yesList"
+        let url2="/v1/content/list"
+        console.log(Date.now())
+        let data="url=".concat(url2, "$time=").concat(Date.now(), "000000")
+        console.log(data)
+        console.log("encodeData="+encrypt(data))
+        console.log(decrypt("hyzsfTyNbcWumXajMggopw=="))
+    </script>
+</head>
+<body>
+</body>
+</html>

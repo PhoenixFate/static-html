@@ -1,0 +1,38 @@
+
+.box {
+    font-weight: bold;
+    font-size: 32rem;
+    width: 80%;
+    background-color: #fff;
+    padding: 72rem 40rem 40rem;
+    box-sizing: border-box;
+    text-indent:2em;
+    border-radius: 20rem;
+    border:8rem solid #6cf;
+    position: relative;
+    box-shadow: 0 4rem 4rem #fff;
+    line-height: 44rem;
+    text-align: left;
+}
+
+.box1 {
+    margin: 120rem auto 0;
+}
+
+.box1 img,
+.box2 img{
+    position: absolute;
+    width: 300rem;
+    height: 80rem;
+    left: 50%;
+    top:-20rem;
+    margin-left: -150rem;
+}
+
+.box2 {
+    margin: 60rem auto 0;
+}
+
+
+
+

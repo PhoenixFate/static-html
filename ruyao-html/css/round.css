@@ -1,0 +1,131 @@
+.node {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-weight: bold;
+}
+
+.node button {
+    position: absolute;
+    height:80rem;
+    width:80rem;
+    border-radius:50%;
+    text-align:center;
+    color:#fff;
+    border:4rem solid #fff;
+    box-shadow:8rem 8rem 8rem #444;
+    font-size: 40rem;
+}
+
+#btn1{
+     top:24%;
+     left:3%;
+     background-color: #17b300;
+ }
+
+#btn2{
+    top:27%;
+    left:19%;
+}
+
+#btn3{
+    top:16%;
+    left:56%;
+}
+
+#btn4{
+    top:47%;
+    left:87%;
+}
+
+#btn5{
+    top:39%;
+    left:52%;
+}
+
+#btn6{
+    top:53%;
+    left:73%;
+}
+
+#btn7{
+    top:68%;
+    left:79%;
+}
+
+#btn8{
+    top:80%;
+    left:71%;
+}
+
+.node div {
+    height:80rem;
+    width:160rem;
+    position:absolute;
+    font-size: 30rem;
+    text-align: center;
+    line-height: 80rem;
+    box-shadow:0 6rem 4rem #555;
+    background:#fff;
+    color:#979797;
+    border-radius: 20rem;
+}
+
+#node1{
+    top:17%;
+    left:1%;
+    background:#3dd8ff;
+    color: #FFFFFF;
+}
+#node2{
+    top: 34%;
+    left: 10%;
+}
+#node3{
+    top: 9%;
+    left: 46%;
+}
+#node4{
+    top: 40%;
+    left: 70%;
+}
+#node5{
+    top: 32%;
+    left: 42%;
+}
+#node6{
+    top: 53%;
+    left: 48%;
+}
+#node7{
+    top: 67%;
+    left: 54%;
+}
+#node8{
+    top: 80%;
+    left: 46%;
+}
+
+.start {
+    height: 88rem;
+    width: 250rem;
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    margin-left: -125rem;
+    box-shadow:0 10rem 0 #377d97;
+    line-height:60rem;
+    text-align: center;
+    background:#3dd8ff;
+    color:#fff;
+    font-size:36rem;
+    border-radius: 10rem;
+}
+
+.start:active {
+    background: #47acff;
+}
+
+.hideNode {
+    display: none;
+}

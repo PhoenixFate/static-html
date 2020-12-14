@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .prescription-main {
+            min-height: 540px;
+            width:1000px;
+            border:2px solid #aaa;
+            margin: 10px auto 0;
+            font-size: 20px;
+            padding: 10px;
+            position: relative;
+        }
+        .line-head {
+            height: 50px;
+            line-height: 50px;
+        }
+        .line-head-info {
+            position: relative;
+            margin-left: 20px;
+        }
+        .line-head-info::before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            content: '';
+            left: -13px;
+            width: 8px;
+            height: 20px;
+            background-color: dodgerblue;
+        }
+        .close {
+            display: inline-block;
+            height:30px;
+            width: 30px;
+            margin-top: 10px;
+            margin-right: 10px;
+            float:right;
+            background:url(../imgs/close.png) no-repeat 0 0;
+            background-size: 100% 100%;
+        }
+        .line-info {
+            height: 30px;
+            line-height: 30px;
+            padding-left: 65px;
+        }
+        .line-info-value {
+            padding-left: 5px;
+        }
+        .line-info-common {
+            margin-left: 65px;
+        }
+        .prescription-number {
+            float:right;
+            margin-right: 15px;
+        }
+        .prescription-detail {
+            padding-left: 65px;
+            min-height: 200px;
+        }
+        .prescription-detail-diagnosis {
+            min-height: 50px;
+            line-height: 30px;
+            width: 750px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .prescription-detail-diagnosis div {
+            display: inline-block;
+        }
+        .prescription-detail-diagnosis-left {
+            width: 50px;
+            float:left
+        }
+        .prescription-detail-diagnosis-right {
+            float:right;
+            width: 685px;
+            padding-left: 15px;
+        }
+        .prescription-detail-medicine {
+            margin-top: 10px;
+            min-height: 120px;
+            width: 750px;
+            overflow: hidden;
+        }
+        .prescription-detail-medicine-left {
+            display: inline-block;
+            float: left;
+            width: 50px;
+            height: 100%;
+        }
+        .prescription-detail-medicine-right {
+            display: inline-block;
+            float: right;
+            width: 685px;
+            padding-left: 15px;
+            /*height: 100%;*/
+        }
+
+        .prescription-detail-medicine-detail {
+            margin-bottom: 20px;
+        }
+        .medicine-name {
+            display: inline-block;
+            min-width: 120px;
+        }
+        .medicine-margin {
+            margin-left: 20px;
+        }
+        .medicine-spec {
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .prescription-button-line {
+            height: 36px;
+            padding-right: 30px;
+            position: absolute;
+            bottom: 10px;
+            right:0
+        }
+
+        .diagnosis-margin-right {
+            margin-right: 20px;
+        }
+
+        .prescription-button {
+            height: 36px;
+            width: 100px;
+            float:right;
+            margin-right: 10px;
+        }
+        .button-disagree {
+            background-color: #fd4446;
+            border: none;
+        }
+
+        .button-agree {
+            background-color: #0ddbad;
+            border: none;
+        }
+        .prescription-advice {
+            width: 765px;
+            padding-left: 65px;
+            height: 100px;
+            margin-bottom: 50px;
+        }
+        .prescription-advice-title {
+            width: 100px;
+            float:left;
+            height: 100px;
+        }
+        .prescription-advice-textarea {
+            height: 100px;
+            float:right;
+            width: 600px;
+        }
+
+        .prescription-advice textarea {
+            margin: 0;
+            width: 580px;
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="prescription-main">
+        <div class="line-head">
+            <span class="line-head-info">患者信息</span>
+            <div class="close"><a href="#" ></a></div>
+            <span class="prescription-number">Rp201906140001</span>
+        </div>
+        <div class="line-info">
+            <span>姓名: </span><span class="line-info-value">XXX</span><span class="line-info-common">性别: </span><span class="line-info-value">男</span>
+            <span class="line-info-common">年龄: </span><span class="line-info-value">34</span>
+            <span class="line-info-common">身份证号: </span><span class="line-info-value">320486198602330152</span>
+        </div>
+        <div class="line-head">
+            <span class="line-head-info">医生信息</span>
+        </div>
+        <div class="line-info">
+            <span>姓名: </span><span class="line-info-value">XXX</span><span class="line-info-common">科室: </span><span class="line-info-value">普内科</span>
+        </div>
+        <div class="line-head">
+            <span class="line-head-info">处方信息</span>
+        </div>
+        <div class="prescription-detail">
+            <div class="prescription-detail-diagnosis">
+                <div class="prescription-detail-diagnosis-left">诊断: </div>
+                <div class="prescription-detail-diagnosis-right">
+                    <span class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                    <span  class="diagnosis-margin-right">急性肠胃炎</span>
+                </div>
+            </div>
+            <div class="prescription-detail-medicine">
+                <div class="prescription-detail-medicine-left">药嘱: </div>
+                <div class="prescription-detail-medicine-right">
+                    <div class="prescription-detail-medicine-detail">
+                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>
+                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>
+                    </div>
+                    <div class="prescription-detail-medicine-detail">
+                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>
+                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>
+                    </div>
+                    <div class="prescription-detail-medicine-detail">
+                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>
+                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>
+                    </div>
+                    <div class="prescription-detail-medicine-detail">
+                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>
+                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>
+                    </div>
+<!--                    <div class="prescription-detail-medicine-detail">-->
+<!--                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>-->
+<!--                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>-->
+<!--                    </div>-->
+<!--                    <div class="prescription-detail-medicine-detail">-->
+<!--                        <div><span class="medicine-name">阿莫西林</span><span class="medicine-margin medicine-spec">0.5g*12粒</span><span class="medicine-margin">2盒</span></div>-->
+<!--                        <div><span>用法用量： </span><span>口服</span><span class="medicine-margin">每次0.5g</span><span class="medicine-margin">每日2次</span></div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+        <div class="prescription-advice">
+            <div class="prescription-advice-title">审核意见：</div>
+            <div class="prescription-advice-textarea"><textarea ></textarea></div>
+        </div>
+        <div class="prescription-button-line">
+            <input type="button" value="通过" class="prescription-button button-agree">
+            <input type="button" value="拒绝" class="prescription-button button-disagree">
+        </div>
+    </div>
+</body>
+</html>

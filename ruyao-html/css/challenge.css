@@ -1,0 +1,27 @@
+.challenge {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin-left: -300rem;
+    margin-top: -350rem;
+    width: 600rem;
+    height: 700rem;
+    background-image: url("https://picture.bytes-space.com/ruyao/challenge/challenge.png");
+    background-size: 100% 100%;
+}
+
+
+.add-friend {
+    position: fixed;
+    left: 50%;
+    margin-left: -100rem;
+    bottom: 14%;
+    width: 220rem;
+    height: 80rem;
+    font-size: 40rem;
+    font-weight: bold;
+    background-color: #fff;
+    line-height: 80rem;
+    text-align: center;
+    border-radius: 6rem;
+}

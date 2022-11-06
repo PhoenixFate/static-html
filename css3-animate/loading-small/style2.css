@@ -1,0 +1,51 @@
+
+*,*:after,
+*:before,html
+{box-sizing:border-box}
+
+body{
+    background:#000;
+    margin:0;
+    padding:0;
+    overflow:hidden
+}
+
+div{
+    width:50px;
+    height:50px;
+    top:50%;
+    left:50%;
+    display:block;
+    position:absolute;
+    transform:translate(-50%,-50%)
+}
+
+div:before,div:after{
+    content:"";
+    width:20px;
+    height:20px;
+    top:15px;
+    display:block;
+    position:absolute;
+    border-radius:50%
+}
+
+div:before{
+    background:linear-gradient(90deg,#1d976c,#93f9b9);
+    animation:rotation1 1s linear infinite
+}
+
+div:after{
+    background:linear-gradient(90deg,#e65c00,#f9d423);
+    animation:rotation2 1s linear infinite
+}
+
+@keyframes rotation1{
+    from{left:5px;z-index:1}
+    to{left:25px}
+}
+
+@keyframes rotation2{
+    from{right:5px}
+    to{right:25px}
+}

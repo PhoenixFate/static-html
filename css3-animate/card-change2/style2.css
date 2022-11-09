@@ -6,7 +6,7 @@
     height: 90vh;
     margin: 5% auto 0 600px;
 }
-ul>li {
+.card>ul>li {
     margin: 20px auto;
     height: 40px;
 }
@@ -24,7 +24,8 @@ ul>li {
     top: 0;
     left: 0;
     z-index: 2;
-    background: #e5e5e5;
+    /*background: #e5e5e5;*/
+    background: white;
     border-radius: 30px;
     padding: 40px;
     width: 200px;
@@ -45,7 +46,7 @@ ul>li {
 .card--next {
     z-index: 5;
     transform: translateY(10px) rotate(1deg) translateX(10px) scale(1);
-    background-color: #efefef;
+    background: white;
     box-shadow: 0 0 4px 2px #a6a5a5;
 
 }
@@ -146,7 +147,7 @@ ul>li {
     position: relative;
     z-index: 10;
     opacity: 1;
-    background: #EEE;
+    background: white;
     /*transform: rotate(-1deg) translateX(0%) scale(1)*/
     transform: translateX(0%) scale(1);
     box-shadow: 0 0 4px 2px #cbcbcb;

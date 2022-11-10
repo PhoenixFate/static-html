@@ -13,20 +13,20 @@
       display: flex; /*弹性布局，子元素可以水平垂直都居中*/
       justify-content: center;
       align-items: center;
-      background-color: #23C6D9;
+      background-color: white;
     }
     .wave {
       position: relative;
-      -webkit-box-reflect: below -12px linear-gradient(transparent, red);
+      -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(0, 0, 0, .5));
     }
     .wave span {
       position: relative;
       display: inline-block;
-      color: #fff;
-      font-size: 50px;
+      color: black;
+      font-size: 26px;
       text-transform: uppercase;
       letter-spacing: 8px;
-      animation: wavy 1s ease-in-out infinite;
+      animation: wavy 3s ease-in-out infinite;
       /* 通过var函数调用自定义属性--i，在计算出动画延迟时间 */
       animation-delay: calc(0.1s * var(--i));
     }
@@ -35,8 +35,8 @@
       0% {
         transform: translateY(0);
       }
-      20% {
-        transform: translateY(-30px);
+      14% {
+        transform: translateY(-20px);
       }
       50%,100% {
         transform: translateY(0);
@@ -47,10 +47,10 @@
 
 <body>
 <div class="wave">
-  <span style="--i:1;">w</span>
-  <span style="--i:2;">a</span>
-  <span style="--i:3;">i</span>
-  <span style="--i:4;">t</span>
+  <span style="--i:1;">L</span>
+  <span style="--i:2;">o</span>
+  <span style="--i:3;">a</span>
+  <span style="--i:4;">d</span>
   <span style="--i:5;">i</span>
   <span style="--i:6;">n</span>
   <span style="--i:7;">g</span>

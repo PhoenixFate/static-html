@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            background: #313131;
+            color:#fff;
+        }
+        .item {
+            width: 200px;
+            height: 100px;
+            position: relative;
+            color: #e5e4e4;
+        }
+        .item span {
+            z-index: 10;
+            position: absolute;
+            left: 0;
+            top:0;
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:lighten;*/
+            /*mix-blend-mode:multiply;*/
+            mix-blend-mode:difference;
+
+
+        }
+        .cover {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left:40px;
+            top:0;
+            background: #fff;
+            z-index: 1;
+            animation: move 3s infinite linear alternate;
+        }
+        @keyframes move {
+            0% {
+                transform: translate(-30%, -50%);
+            }
+            100% {
+                transform: translate(-70%, -50%);
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="item">
+     <span>是点击发链接水电费水电费地方</span>
+      <div class="cover"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字渐变动画</title>
+    <style>
+        .slideShine {
+            background: #2d2d2d -webkit-linear-gradient(left, #ecd695, #b97d05) no-repeat 0 0;
+            background-size: 6% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 36px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            -webkit-animation: slideShine 4s linear infinite;
+            animation: slideShine 4s linear infinite;
+        }
+
+        /*.slideShine {*/
+        /*   */
+        /*}*/
+
+        @-webkit-keyframes slideShine {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+
+        @keyframes slideShine {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 100% 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<p class="slideShine">→css3文字渐变动画效果 >></p>
+</body>
+</html>

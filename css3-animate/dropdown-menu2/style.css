@@ -82,7 +82,10 @@ body {
     width: 0;
     height: 0;
     background-color: rgba(20, 21, 26, 0.6);
-    border-bottom-right-radius: 200%;
+    border-top-left-radius: 80%;
+    border-top-left-radius: 80%;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 80%;
     z-index: -1;
     transition: border-radius linear .8s, width cubic-bezier(0.77, 0, 0.175, 1) .6s, height cubic-bezier(0.77, 0, 0.175, 1) .6s
 }

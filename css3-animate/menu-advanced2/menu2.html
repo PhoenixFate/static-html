@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .menu {
+            height: 100%;
+            width: 160px;
+            background-color: #3c73ff;
+            position: absolute;
+            left: 10px;
+            top:0;
+            padding-top: 200px;
+            background-color: #eaeef6;
+        }
+        ul li{
+            height: 80px;
+            width: 160px;
+            list-style-type: none;
+            text-align: center;
+            line-height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .4s;
+            margin-top: 10px;
+        }
+        ul li span {
+            position: relative;
+        }
+
+        .active {
+            height: 80px;
+        }
+
+        li.active {
+            padding-left: 30px;
+        }
+
+        .mine-selector {
+            position: absolute;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            background-color: #fff;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            margin-left: 20px;
+            top: 210px;
+            left: -30px;
+            height: 80px;
+            width: 190px;
+        }
+
+
+        .mine-selector .right,
+        .mine-selector .left {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            right: 20px;
+        }
+
+        .mine-selector .right {
+            top: -25px;
+        }
+
+        .mine-selector .left {
+            bottom: -25px;
+        }
+
+        .mine-selector .right:before,
+        .mine-selector .left:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3c73ff;
+            background-color: #eaeef6;
+        }
+
+        .mine-selector .right:before {
+            right: 0;
+            top: -25px;
+        }
+
+        .mine-selector .left:before {
+            right: 0;
+            bottom: -25px;
+        }
+
+        .mine-selector .right1,
+        .mine-selector .left1 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: #fff;
+            left: 10px;
+        }
+
+        .mine-selector .right1 {
+            top: -25px;
+        }
+
+        .mine-selector .left1 {
+            bottom: -25px;
+        }
+
+        .mine-selector .right1:before,
+        .mine-selector .left1:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #3c73ff;
+            background-color: #eaeef6;
+        }
+
+        .mine-selector .right1:before {
+            left: 0;
+            top: -25px;
+        }
+
+        .mine-selector .left1:before {
+            left: 0;
+            bottom: -25px;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="menu" id="navbarSupportedContent">
+      <ul>
+          <!--<div class="mine-selector" style="top: 200px; left: 10px; height: 80px; width: 150px;">-->
+
+          <div class="mine-selector" style="">
+              <div class="left"></div>
+              <div class="right"></div>
+              <div class="left1"></div>
+              <div class="right1"></div>
+          </div>
+          <li class="active" tabIndex="1">
+              <span>abc</span>
+          </li>
+          <li tabIndex="2"><span>asdfas</span></li>
+          <li tabIndex="3"><span>asdfasdf</span></li>
+          <li tabIndex="4"><span>asdfasdf</span></li>
+          <li tabIndex="5"><span>asfasdÏ</span></li>
+      </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="http://cdn.bootstrapmb.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

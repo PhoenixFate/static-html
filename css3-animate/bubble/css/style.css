@@ -1,0 +1,555 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body,
+.item,
+.bubble,
+.bubble::before,
+.bubble::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+.bubble,
+.bubble::before,
+.bubble::after {
+    width: 100%;
+    height: 100%;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+    outline: 0;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    /* background: #1c0c2a; */
+    overflow: hidden;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    width: 10.29vw;
+    height: 10.29vw;
+    animation: var(--time-sort) ease-in-out forwards 1s;
+    position: absolute;
+    --time-sort: 10s;
+}
+
+.item:nth-of-type(1) {
+    animation-name: sorting-1;
+    --t-y: -20;
+    --degrees: 302;
+    --time-bubble: 10s;
+    left: 3.5vw;
+}
+
+@keyframes sorting-1 {
+    0%,
+    9.09% {
+        left: 3.5vw;
+    }
+    13.635%,
+    18.18% {
+        left: 17.29vw;
+    }
+    22.725%,
+    27.27% {
+        left: 31.08vw;
+    }
+    31.815%,
+    36.36% {
+        left: 44.87vw;
+    }
+    40.905%,
+    45.45% {
+        left: 58.66vw;
+    }
+    49.995%,
+    100% {
+        left: 72.45vw;
+    }
+}
+
+@keyframes radius-1 {
+    20% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 50% 50% 40%;
+    }
+    60% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    80% {
+        border-radius: 40% 50% 50% 50%;
+    }
+}
+
+@keyframes scale-1 {
+    20% {
+        transform: scale3d(0.91, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.922, 1);
+    }
+    60% {
+        transform: scale3d(0.88, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.924, 1);
+    }
+}
+
+.item:nth-of-type(1) .bubble::before {
+    animation-name: radius-1, scale-1;
+}
+
+.item:nth-of-type(1) .bubble::after {
+    content: "88";
+}
+
+.item:nth-of-type(2) {
+    animation-name: sorting-2;
+    --t-y: 25;
+    --degrees: 106;
+    --time-bubble: 6s;
+    left: 17.29vw;
+}
+
+@keyframes sorting-2 {
+    0%,
+    9.09% {
+        left: 17.29vw;
+    }
+    13.635%,
+    81.81% {
+        left: 3.5vw;
+    }
+    86.355%,
+    100% {
+        left: 17.29vw;
+    }
+}
+
+@keyframes radius-2 {
+    20% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 50% 50% 40%;
+    }
+    60% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    80% {
+        border-radius: 40% 50% 50% 50%;
+    }
+}
+
+@keyframes scale-2 {
+    20% {
+        transform: scale3d(0.882, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.87, 1);
+    }
+    60% {
+        transform: scale3d(0.916, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.898, 1);
+    }
+}
+
+.item:nth-of-type(2) .bubble::before {
+    animation-name: radius-2, scale-2;
+}
+
+.item:nth-of-type(2) .bubble::after {
+    content: "15";
+}
+
+.item:nth-of-type(3) {
+    animation-name: sorting-3;
+    --t-y: 11;
+    --degrees: 192;
+    --time-bubble: 8s;
+    left: 31.08vw;
+}
+
+@keyframes sorting-3 {
+    0%,
+    18.18% {
+        left: 31.08vw;
+    }
+    22.725%,
+    54.54% {
+        left: 17.29vw;
+    }
+    59.085%,
+    63.63% {
+        left: 31.08vw;
+    }
+    68.175%,
+    72.72% {
+        left: 44.87vw;
+    }
+    77.265%,
+    100% {
+        left: 58.66vw;
+    }
+}
+
+@keyframes radius-3 {
+    20% {
+        border-radius: 40% 50% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    60% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    80% {
+        border-radius: 50% 50% 50% 40%;
+    }
+}
+
+@keyframes scale-3 {
+    20% {
+        transform: scale3d(1, 0.862, 1);
+    }
+    40% {
+        transform: scale3d(0.921, 1, 1);
+    }
+    60% {
+        transform: scale3d(1, 0.94, 1);
+    }
+    80% {
+        transform: scale3d(0.95, 1, 1);
+    }
+}
+
+.item:nth-of-type(3) .bubble::before {
+    animation-name: radius-3, scale-3;
+}
+
+.item:nth-of-type(3) .bubble::after {
+    content: "86";
+}
+
+.item:nth-of-type(4) {
+    animation-name: sorting-4;
+    --t-y: 26;
+    --degrees: 97;
+    --time-bubble: 10s;
+    left: 44.87vw;
+}
+
+@keyframes sorting-4 {
+    0%,
+    27.27% {
+        left: 44.87vw;
+    }
+    31.815%,
+    54.54% {
+        left: 31.08vw;
+    }
+    59.085%,
+    81.81% {
+        left: 17.29vw;
+    }
+    86.355%,
+    100% {
+        left: 3.5vw;
+    }
+}
+
+@keyframes radius-4 {
+    20% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    60% {
+        border-radius: 40% 50% 50% 50%;
+    }
+    80% {
+        border-radius: 50% 50% 50% 40%;
+    }
+}
+
+@keyframes scale-4 {
+    20% {
+        transform: scale3d(0.905, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.878, 1);
+    }
+    60% {
+        transform: scale3d(0.935, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.882, 1);
+    }
+}
+
+.item:nth-of-type(4) .bubble::before {
+    animation-name: radius-4, scale-4;
+}
+
+.item:nth-of-type(4) .bubble::after {
+    content: "13";
+}
+
+.item:nth-of-type(5) {
+    animation-name: sorting-5;
+    --t-y: 15;
+    --degrees: 56;
+    --time-bubble: 8s;
+    left: 58.66vw;
+}
+
+@keyframes sorting-5 {
+    0%,
+    36.36% {
+        left: 58.66vw;
+    }
+    40.905%,
+    63.63% {
+        left: 44.87vw;
+    }
+    68.175%,
+    90.9% {
+        left: 31.08vw;
+    }
+    95.445%,
+    100% {
+        left: 44.87vw;
+    }
+}
+
+@keyframes radius-5 {
+    20% {
+        border-radius: 50% 50% 50% 40%;
+    }
+    40% {
+        border-radius: 40% 50% 50% 50%;
+    }
+    60% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    80% {
+        border-radius: 50% 40% 50% 50%;
+    }
+}
+
+@keyframes scale-5 {
+    20% {
+        transform: scale3d(0.862, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.889, 1);
+    }
+    60% {
+        transform: scale3d(0.871, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.885, 1);
+    }
+}
+
+.item:nth-of-type(5) .bubble::before {
+    animation-name: radius-5, scale-5;
+}
+
+.item:nth-of-type(5) .bubble::after {
+    content: "83";
+}
+
+.item:nth-of-type(6) {
+    animation-name: sorting-6;
+    --t-y: 14;
+    --degrees: 357;
+    --time-bubble: 7s;
+    left: 72.45vw;
+}
+
+@keyframes sorting-6 {
+    0%,
+    45.45% {
+        left: 72.45vw;
+    }
+    49.995%,
+    72.72% {
+        left: 58.66vw;
+    }
+    77.265%,
+    90.9% {
+        left: 44.87vw;
+    }
+    95.445%,
+    100% {
+        left: 31.08vw;
+    }
+}
+
+@keyframes radius-6 {
+    20% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 50% 50% 40%;
+    }
+    60% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    80% {
+        border-radius: 40% 50% 50% 50%;
+    }
+}
+
+@keyframes scale-6 {
+    20% {
+        transform: scale3d(0.874, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.86, 1);
+    }
+    60% {
+        transform: scale3d(0.854, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.895, 1);
+    }
+}
+
+.item:nth-of-type(6) .bubble::before {
+    animation-name: radius-6, scale-6;
+}
+
+.item:nth-of-type(6) .bubble::after {
+    content: "54";
+}
+
+.item:nth-of-type(7) {
+    --t-y: -15;
+    --degrees: 193;
+    --time-bubble: 6s;
+    left: 86.24vw;
+}
+
+@keyframes radius-7 {
+    20% {
+        border-radius: 50% 50% 40% 50%;
+    }
+    40% {
+        border-radius: 50% 50% 50% 40%;
+    }
+    60% {
+        border-radius: 50% 40% 50% 50%;
+    }
+    80% {
+        border-radius: 40% 50% 50% 50%;
+    }
+}
+
+@keyframes scale-7 {
+    20% {
+        transform: scale3d(0.893, 1, 1);
+    }
+    40% {
+        transform: scale3d(1, 0.868, 1);
+    }
+    60% {
+        transform: scale3d(0.926, 1, 1);
+    }
+    80% {
+        transform: scale3d(1, 0.852, 1);
+    }
+}
+
+.item:nth-of-type(7) .bubble::before {
+    animation-name: radius-7, scale-7;
+}
+
+.item:nth-of-type(7) .bubble::after {
+    content: "89";
+}
+
+.bubble {
+    animation: translate-3D linear infinite;
+    color: #61bdf6;
+}
+
+.bubble::before {
+    content: "";
+    animation: ease-in-out infinite, linear infinite;
+    box-shadow: 0 0 1.5145vw 0 rgba(187, 36, 10, 0.25) inset,
+    0 0 2.5145vw 0 rgba(24, 196, 234, 0.25);
+    /*background: radial-gradient(#1c0c2a 50%, rgba(28, 12, 42, 0)),*/
+    /*linear-gradient(*/
+    /*        calc(var(--degrees) * 1deg),*/
+    /*        #61bdf6,*/
+    /*        rgba(97, 189, 246, 0) 75%*/
+    /*),*/
+    /*linear-gradient(*/
+    /*    !*calc(((var(--degrees) + 120) % 360) * 1deg),*! 45deg,*/
+    /*        #343b99,*/
+    /*        rgba(52, 59, 153, 0) 75%*/
+    /*),*/
+    /*linear-gradient(*/
+    /*    !*calc(((var(--degrees) + 240) % 360) * 1deg),*! 60deg,*/
+    /*        #1c0c2a,*/
+    /*        rgba(28, 12, 42, 0) 75%*/
+    /*);*/
+    background-color: #1c0c2a;
+    /*background: radial-gradient(#1c0c2a 50%, rgba(28, 12, 42, 0)),*/
+    /*linear-gradient(*/
+    /*        calc(var(--degrees) * 1deg),*/
+    /*        #61bdf6,*/
+    /*        rgba(97, 189, 246, 0) 75%*/
+    /*),*/
+}
+
+.bubble::after {
+    color: #61bdf6;
+    font-size: 4.116vw;
+}
+
+.bubble,
+.bubble::before,
+.bubble::after {
+    animation-duration: var(--time-bubble);
+    border-radius: 50%;
+    position: absolute;
+}
+
+@keyframes translate-3D {
+    25% {
+        transform: translate3d(0, calc(var(--t-y) * 1%), 0);
+    }
+    75% {
+        transform: translate3d(0, calc(var(--t-y) * -1%), 0);
+    }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body, html {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            background-image: url("./image/2.jpg");
+            background-size: 100% 100%;
+            background-position: center center;;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+
+        .left-menu {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            width: 80px;
+            height: calc(100% - 20px);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(2px);
+        }
+
+        .top-menu {
+            position: fixed;
+            left: 100px;
+            top: 10px;
+            width: calc(100% - 110px);
+            height: 60px;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+        }
+        .middle-menu {
+            position: fixed;
+            top:80px;
+            width: 100px;
+            height: calc(100% - 90px);
+            left: 100px;
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+        }
+        .middle-main {
+            position: fixed;
+            right:10px;
+            top:80px;
+            width: calc(100% - 220px);
+            height: calc( 100% - 90px);
+            background: rgba(255, 255, 255, .88);
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="left-menu">
+</div>
+<div class="top-menu">
+
+</div>
+<div class="middle-menu">
+
+</div>
+<div class="middle-main">
+
+</div>
+</body>
+</html>

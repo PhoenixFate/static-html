@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css html日程计划卡片样式</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://anandchowdhary.github.io/ionicons-3-cdn/icons.css"
+          integrity="sha384-+iqgM+tGle5wS+uPwXzIjZS5v6VkqCUV7YQ/e/clzRHAxYbzpUJ+nldylmtBWCP0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="mobile-wrapper">
+    <header class="header">
+        <div class="container"><span>欢迎回来!</span>
+            <h1>日程计划</h1>
+            <div class="menu-toggle">
+                <div><span></span><span></span><span></span></div>
+            </div>
+        </div>
+    </header>
+    <section class="today-box" id="today-box"><span class="breadcrumb">今天</span>
+        <h3 class="date-title">May 15,2022</h3>
+        <div class="plus-icon"><i class="ion ion-ios-add"></i></div>
+    </section>
+    <section class="upcoming-events">
+        <div class="container"><h3>事件列表 </h3>
+            <div class="events-wrapper">
+                <div class="event"><i class="ion ion-ios-flame hot"></i><h4 class="event__point">11:00 上午</h4><span
+                        class="event__duration">in 30 minutes.</span>
+                    <p class="event__description">Monday briefing with the team(...). </p></div>
+                <div class="event"><i class="ion ion-ios-flame done"></i><h4 class="event__point">12:00 下午</h4><span
+                        class="event__duration">in 1 hour.</span>
+                    <p class="event__description">Lunch with Paul Mccartney @Burgers House!</p></div>
+                <div class="event active"><i class="ion ion-ios-radio-button-on icon-in-active-mode"></i><h4
+                        class="event__point">14:00 下午</h4>
+                    <p class="event__description">Meet clients from project. </p></div>
+                <div class="event"><i class="ion ion-ios-flame-outline upcoming"></i><h4 class="event__point">20:45
+                    下午</h4><span class="event__duration">in 45 minutes.</span>
+                    <p class="event__description">Watch sci-fi series. </p></div>
+                <div class="event"><i class="ion ion-ios-flame-outline upcoming"></i><h4 class="event__point">23:15
+                    下午</h4><span class="event__duration">in 20 minutes.</span>
+                    <p class="event__description">Customer dialog on Skype. </p></div>
+            </div>
+            <button class="add-event-button"><span class="add-event-button__title">添加事件</span><span
+                    class="add-event-button__icon"><i class="ion ion-ios-star-outline"></i></span></button>
+        </div>
+    </section>
+</div>
+</body>
+</html>

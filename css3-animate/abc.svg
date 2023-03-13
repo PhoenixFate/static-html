@@ -1,0 +1,246 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:oryx="http://oryx-editor.org"
+     id="sid-85664423-1398-4097-97F7-62DBE51DDFB8" width="715.25" height="340"
+     xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id="sid-6682C86F-257D-47E6-8481-F147C997934Estart" refX="1" refY="5" markerUnits="userSpaceOnUse"
+                markerWidth="17" markerHeight="11" orient="auto">
+            undefined
+            <path id="sid-6682C86F-257D-47E6-8481-F147C997934Edefault" d="M 5 0 L 11 10" fill="white" stroke="#585858"
+                  stroke-width="1" display="none"/>
+        </marker>
+        <marker id="sid-6682C86F-257D-47E6-8481-F147C997934Eend" refX="15" refY="6" markerUnits="userSpaceOnUse"
+                markerWidth="15" markerHeight="12" orient="auto">
+            <path id="sid-6682C86F-257D-47E6-8481-F147C997934Earrowhead" d="M 0 1 L 15 6 L 0 11z" fill="#585858"
+                  stroke="#585858" stroke-linejoin="round" stroke-width="2"/>
+        </marker>
+        <marker id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644start" refX="1" refY="5" markerUnits="userSpaceOnUse"
+                markerWidth="17" markerHeight="11" orient="auto">
+            undefined
+            <path id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644default" d="M 5 0 L 11 10" fill="white" stroke="#585858"
+                  stroke-width="1" display="none"/>
+        </marker>
+        <marker id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644end" refX="15" refY="6" markerUnits="userSpaceOnUse"
+                markerWidth="15" markerHeight="12" orient="auto">
+            <path id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644arrowhead" d="M 0 1 L 15 6 L 0 11z" fill="#585858"
+                  stroke="#585858" stroke-linejoin="round" stroke-width="2"/>
+        </marker>
+    </defs>
+    <svg id="underlay-container"/>
+    <g stroke="none" font-family="Verdana, sans-serif" font-size-adjust="none" font-style="normal" font-variant="normal"
+       font-weight="normal" line-heigth="normal" font-size="12">
+        <g class="stencils">
+            <g class="me"/>
+            <g class="children">
+                <g id="svg-sid-D5B90033-0193-4655-BDE2-9A41A90F3D20">
+                    <g class="stencils" transform="translate(217.25, 235)">
+                        <g class="me">
+                            <g pointer-events="fill" id="sid-D843B564-CA4D-4E71-A891-2AB2120FCC20" title="开始事件">
+                                <circle id="sid-D843B564-CA4D-4E71-A891-2AB2120FCC20bg_frame" cx="15" cy="15" r="15"
+                                        stroke="#585858" fill="#ffffff" stroke-width="1"/>
+                                <text font-size="11" id="sid-D843B564-CA4D-4E71-A891-2AB2120FCC20text_name" x="15"
+                                      y="32" oryx:align="top center" stroke="#373e48" stroke-width="0pt"
+                                      letter-spacing="-0.01px" transform="rotate(0 15 32)" oryx:fontSize="11"
+                                      text-anchor="middle">
+                                    <tspan dy="11" x="15" y="32">开始</tspan>
+                                </text>
+                            </g>
+                        </g>
+                        <g class="children" style="overflow:hidden"/>
+                        <g class="edge"/>
+                    </g>
+                    <g class="controls">
+                        <g class="dockers"/>
+                        <g class="magnets" transform="translate(217.25, 235)">
+                            <g pointer-events="all" display="none" transform="translate(7, 7)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="svg-sid-E5F1641E-B1DF-4B1A-8B1A-FF06809CD714">
+                    <g class="stencils" transform="translate(375, 210)">
+                        <g class="me">
+                            <g pointer-events="fill" oryx:minimumSize="50 40"
+                               id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232" title="人工任务">
+                                <rect id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232text_frame"
+                                      oryx:anchors="bottom top right left" x="1" y="1" width="94" height="79" rx="10"
+                                      ry="10" stroke="none" stroke-width="0" fill="none"/>
+                                <rect id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232bg_frame"
+                                      oryx:resize="vertical horizontal" x="0" y="0" width="100" height="80" rx="10"
+                                      ry="10" stroke="#bbbbbb" stroke-width="1" fill="#f9f9f9"/>
+                                <text font-size="12" id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232text_name" x="50"
+                                      y="40" oryx:align="middle center" oryx:fittoelem="text_frame" stroke="#373e48"
+                                      stroke-width="0pt" letter-spacing="-0.01px" transform="rotate(0 50 40)"
+                                      oryx:fontSize="12" text-anchor="middle">
+                                    <tspan x="50" y="40" dy="5">领导审批</tspan>
+                                </text>
+
+                                <g id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232userTask" transform="translate(3,3)">
+                                    <path oryx:anchors="top left" style="fill:#d1b575;stroke:none;"
+                                          d="m 1,17 16,0 0,-1.7778 -5.333332,-3.5555 0,-1.7778 c 1.244444,0 1.244444,-2.3111 1.244444,-2.3111 l 0,-3.0222 C 12.555557,0.8221 9.0000001,1.0001 9.0000001,1.0001 c 0,0 -3.5555556,-0.178 -3.9111111,3.5555 l 0,3.0222 c 0,0 0,2.3111 1.2444443,2.3111 l 0,1.7778 L 1,15.2222 1,17 17,17"
+                                          id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_17"/>
+
+                                </g>
+
+                                <g id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232parallel" display="none">
+                                    <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb"
+                                          d="M46 70 v8 M50 70 v8 M54 70 v8" stroke-width="2"
+                                          id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_18"/>
+                                </g>
+
+                                <g id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232sequential" display="none">
+                                    <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb" stroke-width="2"
+                                          d="M46,76h10M46,72h10 M46,68h10"
+                                          id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_19"/>
+                                </g>
+
+
+                                <g id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232compensation" display="none">
+                                    <path oryx:anchors="bottom" fill="none" stroke="#bbbbbb"
+                                          d="M 62 74 L 66 70 L 66 78 L 62 74 L 62 70 L 58 74 L 62 78 L 62 74"
+                                          stroke-width="1"
+                                          id="sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_sid-4CC8C5CE-84DB-4F45-A582-4D5D40F7A232_20"/>
+                                </g>
+                            </g>
+                        </g>
+                        <g class="children" style="overflow:hidden"/>
+                        <g class="edge"/>
+                    </g>
+                    <g class="controls">
+                        <g class="dockers"/>
+                        <g class="magnets" transform="translate(375, 210)">
+                            <g pointer-events="all" display="none" transform="translate(-7, 12)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(-7, 32)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(-7, 52)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(17, 71)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(42, 71)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(67, 71)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(91, 12)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(91, 32)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(91, 52)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(17, -7)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(42, -7)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(67, -7)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                            <g pointer-events="all" display="none" transform="translate(42, 32)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="svg-sid-0CC2D672-925E-4E9F-A70C-1C2BC36F014A">
+                    <g class="stencils" transform="translate(637.25, 232)">
+                        <g class="me">
+                            <g pointer-events="fill" id="sid-F27A9627-09C1-47E9-B47C-2C1BCC3FA784" title="结束事件">
+                                <circle id="sid-F27A9627-09C1-47E9-B47C-2C1BCC3FA784bg_frame" cx="14" cy="14" r="14"
+                                        stroke="#585858" fill="#ffffff" stroke-width="3"/>
+                                <text font-size="11" id="sid-F27A9627-09C1-47E9-B47C-2C1BCC3FA784text_name" x="14"
+                                      y="30" oryx:align="top center" stroke="#373e48" stroke-width="0pt"
+                                      letter-spacing="-0.01px" transform="rotate(0 14 30)" oryx:fontSize="11"
+                                      text-anchor="middle"/>
+                            </g>
+                        </g>
+                        <g class="children" style="overflow:hidden"/>
+                        <g class="edge"/>
+                    </g>
+                    <g class="controls">
+                        <g class="dockers"/>
+                        <g class="magnets" transform="translate(637.25, 232)">
+                            <g pointer-events="all" display="none" transform="translate(6, 6)">
+                                <circle cx="8" cy="8" r="4" stroke="none" fill="red" fill-opacity="0.3"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+            <g class="edge">
+                <g id="svg-sid-4101FCA0-A421-4B2C-BDA0-5BBD41D6D470">
+                    <g class="stencils">
+                        <g class="me">
+                            <g pointer-events="painted">
+                                <path id="sid-6682C86F-257D-47E6-8481-F147C997934E_1"
+                                      d="M247.5556640625 250L374.306640625 250 " stroke="#585858" fill="none"
+                                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                      marker-start="url(#sid-6682C86F-257D-47E6-8481-F147C997934Estart)"
+                                      marker-end="url(#sid-6682C86F-257D-47E6-8481-F147C997934Eend)"/>
+                            </g>
+                            <text id="sid-6682C86F-257D-47E6-8481-F147C997934Etext_name" x="255" y="242"
+                                  oryx:edgePosition="startTop" stroke-width="0pt" letter-spacing="-0.01px"
+                                  transform="rotate(360 247 250)" oryx:fontSize="12" text-anchor="start"/>
+                        </g>
+                        <g class="children" style="overflow:hidden"/>
+                        <g class="edge"/>
+                    </g>
+                    <g class="controls">
+                        <g class="dockers"/>
+                        <g class="magnets"/>
+                    </g>
+                </g>
+                <g id="svg-sid-91E76963-160B-48F8-AF8C-3BD138DF77F1">
+                    <g class="stencils">
+                        <g class="me">
+                            <g pointer-events="painted">
+                                <path id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644_1"
+                                      d="M475.49203125324146 249.1073232043626L636.9933203092585 246.2520517956374 "
+                                      stroke="#585858" fill="none" stroke-width="2" stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      marker-start="url(#sid-210D189E-F7EE-4786-AEF2-3F2FE3007644start)"
+                                      marker-end="url(#sid-210D189E-F7EE-4786-AEF2-3F2FE3007644end)"/>
+                            </g>
+                            <text id="sid-210D189E-F7EE-4786-AEF2-3F2FE3007644text_name" x="483" y="241"
+                                  oryx:edgePosition="startTop" stroke-width="0pt" letter-spacing="-0.01px"
+                                  transform="rotate(358.98714146215667 475 249)" oryx:fontSize="12"
+                                  text-anchor="start"/>
+                        </g>
+                        <g class="children" style="overflow:hidden"/>
+                        <g class="edge"/>
+                    </g>
+                    <g class="controls">
+                        <g class="dockers"/>
+                        <g class="magnets"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+        <g class="svgcontainer">
+            <g display="none" transform="translate(213.25, 206)">
+                <rect x="0" y="0" stroke-width="1" stroke="#777777" fill="none" stroke-dasharray="2,2"
+                      pointer-events="none" width="456" height="88"/>
+            </g>
+            <g display="none">
+                <path stroke-width="1" stroke="silver" fill="none" stroke-dasharray="5,5" pointer-events="none"/>
+            </g>
+            <g display="none">
+                <path stroke-width="1" stroke="silver" fill="none" stroke-dasharray="5,5" pointer-events="none"/>
+            </g>
+            <g>
+                <path stroke-width="2" fill="none"
+                      d="M213.25 236 l0 -5 l5 0 M213.25 264 l0 5 l5 0 M251.25 264 l0 5 l-5 0 M251.25 236 l0 -5 l-5 0 M371 211 l0 -5 l5 0 M371 289 l0 5 l5 0 M479 289 l0 5 l-5 0 M479 211 l0 -5 l-5 0 M633.25 233 l0 -5 l5 0 M633.25 259 l0 5 l5 0 M669.25 259 l0 5 l-5 0 M669.25 233 l0 -5 l-5 0 M243.5556640625 251 l0 -5 l5 0 M243.5556640625 249 l0 5 l5 0 M378.306640625 249 l0 5 l-5 0 M378.306640625 251 l0 -5 l-5 0 M471.49203125324146 247.2520517956374 l0 -5 l5 0 M471.49203125324146 248.1073232043626 l0 5 l5 0 M640.9933203092585 248.1073232043626 l0 5 l-5 0 M640.9933203092585 247.2520517956374 l0 -5 l-5 0 "
+                      stroke="#4444FF" stroke-opacity="0.9" display="none"/>
+            </g>
+        </g>
+    </g>
+</svg>

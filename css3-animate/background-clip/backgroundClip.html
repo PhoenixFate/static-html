@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url('./stone-art.jpg');
+        }
+
+        div.box1 {
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            background-clip: padding-box;
+            width: 400px;
+            height: 80px;
+            max-width: 20em;
+            padding: 10px;
+            margin: 2em auto 0;
+        }
+
+        div.box2 {
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            background-clip: content-box;
+            width: 400px;
+            height: 80px;
+            max-width: 20em;
+            padding: 10px;
+            margin: 2em auto 0;
+        }
+
+        div.box3 {
+            border: 10px solid hsla(0, 0%, 100%, .5);
+            background: white;
+            background-clip: border-box;
+            width: 400px;
+            height: 80px;
+            max-width: 20em;
+            padding: 10px;
+            margin: 2em auto 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>
+</body>
+</html>

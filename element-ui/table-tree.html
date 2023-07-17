@@ -1,0 +1,56 @@
+<script src="//unpkg.com/vue/dist/vue.js"></script>
+<script src="//unpkg.com/element-ui@2.15.6/lib/index.js"></script>
+<div id="app">
+  <template>
+    <div>
+      <el-table
+              :data="tableData"
+              style="width: 100%;margin-bottom: 20px;"
+              row-key="id"
+              border
+              default-expand-all
+              :tree-props="{children: 'children', hasChildren: 'hasChildren'}">
+        <el-table-column
+                prop="date"
+                label="日期"
+                sortable
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="name"
+                label="姓名"
+                sortable
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="address"
+                label="地址">
+        </el-table-column>
+      </el-table>
+
+      <el-table
+              :data="tableData1"
+              style="width: 100%"
+              row-key="id"
+              border
+              lazy
+              :load="load"
+              :tree-props="{children: 'children', hasChildren: 'hasChildren'}">
+        <el-table-column
+                prop="username"
+                label="日期"
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="appKey"
+                label="姓名"
+                width="180">
+        </el-table-column>
+        <el-table-column
+                prop="daytime"
+                label="地址">
+        </el-table-column>
+      </el-table>
+    </div>
+  </template>
+</div>

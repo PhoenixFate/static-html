@@ -1,0 +1,7 @@
+unitDuration:"組織時長"
+failureCount:"失敗次數"
+forbidLoginTime:"禁止登入時間"
+openForbidLogin:"開啟某時間段內禁止登入"
+forbidStartTime:"禁止登入開始時間"
+forbidEndTime:"禁止登入結束時間"
+remoteLoginReminder:"异地登入提醒"

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+虽然td定义的是100px，但是里面的div设置为400px，也就是说，如果td内容是纯文本，超过100px会在td里换行
+
+但是，如果td里div设置了宽度，则会撑宽td的默认值。
+
+结论：td定义的宽带是默认宽度，实际宽度由内容决定。
+-->
+<table style="width:600px; background-color:blue" >
+    <tr>
+        <td width="100px">
+            <div style="width:400px">
+                1
+            </div>
+        </td>
+        <td  >
+            2
+        </td>
+        <td>3</td>
+    </tr>
+
+</table>
+</body>
+</html>

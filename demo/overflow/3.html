@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menu {
+            width: 50%;
+            height: 100%;
+            background-color: rgb(149, 182, 241);
+            flex-shrink: 0;
+            flex-grow: 0;
+            margin-right: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body style="padding: 300px 0;height: 100%;">
+<div id="wrapper"
+     style="height: 80px;background-color: bisque;width: 400px;overflow-x: auto;display: flex;flex-wrap: nowrap;">
+    <div class="menu" id="menu1">
+        111
+    </div>
+    ....其他菜单
+</div>
+<div id="submenu" style="width: 150px;position: absolute;height: 100px;background-color: aquamarine;">子元素</div>
+</body>
+<script>
+    /*子菜单显示和隐藏的细节忽略，也不考虑滚动时子菜单的位置问题，只关注子菜单弹出时的位置*/
+    //使用事件委托添加按钮点击事件
+    document.getElementById('wrapper').onclick = e => {
+        let source = e.srcElement || e.target
+        if (source.className === 'menu') {
+            let pos = document.getElementById(source.id).getBoundingClientRect()
+            //减少回流，使用cssText替代style设置子菜单位置
+            document.getElementById('submenu').style.cssText += `left:${pos.left}px;bottom:${pos.bottom + 30}px`
+        }
+    }
+</script>
+</html>
